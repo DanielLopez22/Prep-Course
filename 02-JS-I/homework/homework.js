@@ -144,13 +144,13 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-    return Mach.pow(num, 3);
+    return num * num * num;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-   return Mach.pow(num,exponent);
+   return Mach.pow(num, exponent);
 }
 
 function redondearNumero(num) {
@@ -162,7 +162,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-   return Mach.ceil(num)
+  return Mach.ceil(num);
 }
 
 function numeroRandom() {
@@ -196,14 +196,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-   return ("nombre soy" + nombre+ " "+apellido);
+   var combinados = nombre + ` ` + apellido;
+   return combinados;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-   return ("Hola Martin !");
+   return `Hola ` + nombre + `!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
