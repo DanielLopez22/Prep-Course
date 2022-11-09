@@ -1,5 +1,6 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+const EleventyServe = require("@11ty/eleventy/src/EleventyServe");
 const { clear } = require("@11ty/eleventy/src/TemplateCache");
 
 // Crea una variable "string", puede contener lo que quieras:
@@ -80,8 +81,8 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
   if(str1.length=== str2.length) {
     return true;
-  } else{
-    return false
+  }else{
+    return false;
   }
 }
 
